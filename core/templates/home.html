@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Catalyst Count</h1>
+    <p class="lead">This is a simple web application for uploading and querying company data.</p>
+    <hr class="my-4">
+    <p>If you are a new user, please register to get started.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'register' %}" role="button">Register</a>
+    <a class="btn btn-secondary btn-lg" href="{% url 'login' %}" role="button">Login</a>
+</div>
+{% endblock %}
